@@ -52,7 +52,7 @@ export class Userforms extends Component {
                         handleChange={this.handleChange}
                         values = {values}
                     />
-                )
+                );
             case 2:
                 return(
                     <FormPersonalDetails 
@@ -62,7 +62,7 @@ export class Userforms extends Component {
                         handleChange={this.handleChange}
                         values = {values}
                     />
-                )
+                );
 
             case 3:
                 return <h1>Confirm</h1>
