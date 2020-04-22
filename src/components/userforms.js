@@ -1,7 +1,7 @@
 /* eslint-disable default-case */
 import React, { Component } from 'react'
-import FormUserDetails from './formuserdetails'
-import FormPersonalDetails from './formpersoanldetails'
+import FormUserDetails from './formuserdetails';
+import FormPersonalDetails from './formpersonaldetails';
 
 export class Userforms extends Component {
     state={
@@ -53,23 +53,23 @@ export class Userforms extends Component {
                         values = {values}
                     />
                 )
-                case 2:
-                    return(
-                        <FormPersonalDetails 
-                            nextStep={this.nextStep}
-                            prevStep={this.prevStep}
+            case 2:
+                return(
+                    <FormPersonalDetails 
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
 
-                            handleChange={this.handleChange}
-                            values = {values}
-                        />
-                    )
+                        handleChange={this.handleChange}
+                        values = {values}
+                    />
+                )
 
-                case 3:
-                    return <h1>Confirm</h1>
+            case 3:
+                return <h1>Confirm</h1>
 
-                case 4:
-                    return <h1>Success</h1>
-            
+            case 4:
+                return <h1>Success</h1>
+        
         }
     }
 }
